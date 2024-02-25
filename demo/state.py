@@ -1,4 +1,4 @@
-from ter import State
+from terapp import State
 
 store = State(init_state=0)
 

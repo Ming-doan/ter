@@ -1,4 +1,4 @@
-from ter import Component, import_support, Header
+from terapp import Component, import_support, Header
 from state import store
 
 

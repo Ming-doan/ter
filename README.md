@@ -6,7 +6,7 @@
 
 Ter is the CLI Framework that will build a CLI application with cool syntax which will amaze your school coding projects.
 
-In ter, we are strongly amaze the syntax and terminologies of other modern UI framework. Our main purpose of creating this framework is to make the terminal app more interactive and fancy with pages, command prompt, and built-in UI.
+In Ter, we are strongly amaze the syntax and terminologies of other modern UI framework. Our main purpose of creating this framework is to make the terminal app more interactive and fancy with pages, command prompt, and built-in UI.
 
 ## Main concept of `Ter`
 
@@ -25,20 +25,20 @@ The state will continuously loop until the `exit` method is called.
 
 ## Quick start
 
-- Install `ter`
+- Install `terapp` in Python package.
 
 ```bash
-$ pip install ter
+$ pip install terapp
 ```
 
 - Create a simple `Ter` app
 
 ```python
 # Import libs
-import ter
+import terapp
 
 # Create app instance
-app = ter.Ter()
+app = terapp.Ter()
 
 # Define Screen
 class MyScreen(ter.Component):
@@ -90,7 +90,7 @@ your_folder
 Ter manages every things in the app instance. Include all the screen in your app.
 
 ```python
-from ter import Ter
+from terapp import Ter
 app = Ter()
 ```
 
@@ -99,7 +99,7 @@ Ter provides the Config class which includes all the custom config of app. Ter c
 - `default_pause_message` (str): If you don't override the `prompt` method, this string will be displayed instead.
 
 ```python
-from ter import Ter, Config
+from terapp import Ter, Config
 app = Ter(
     config=Config(default_pause_message="Press enter to continue...")
 )
@@ -118,7 +118,7 @@ In ter, we define every screen is a component which always have methods:
 - `logic` (optional): This method will run after the user complete typing the prompt to run your desired logic before the new loop.
 
 ```python
-from ter import Component
+from terapp import Component
 
 class YourScreen(Component):
     def __init__(self):
@@ -187,7 +187,7 @@ The term of state management is strongly inspired by Redux library in React fram
 Create your state at `state/your_state.py` file.
 
 ```python
-from ter import State
+from terapp import State
 
 # Initialize store instance
 store = State(init_state=0)
@@ -239,7 +239,7 @@ Ter is providing some quick UI in terminal app.
 - Header
 
 ```python
-from ter import Header
+from terapp import Header
 
 class Screen:
     ...

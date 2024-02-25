@@ -1,5 +1,5 @@
 # Import ter + page component
-from ter import Ter, Config, import_support
+from terapp import Ter, Config, import_support
 from component import Home, Form, Info, Invalid
 
 # Create app variable
